@@ -2,6 +2,7 @@ const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
+    // #swagger.tags = ['Characters']
     try {
         const db = mongodb.getDb().db('project2').collection('avatarCharacters').find();
         const characters = await db.toArray();
@@ -12,6 +13,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+    // #swagger.tags = ['Characters']
     try {
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarCharacters');
@@ -26,6 +28,7 @@ const getSingle = async (req, res) => {
 };
 
 const createCharacter = async (req, res) => {
+    // #swagger.tags = ['Characters']
     try {
         const newCharacter = {
             name: req.body.name,
@@ -50,6 +53,7 @@ const createCharacter = async (req, res) => {
 };
 
 const updateCharacter = async (req, res) => {
+    // #swagger.tags = ['Characters']
     try {
         const id = new ObjectId(req.params.id);
         const updatedCharacter = {
@@ -79,6 +83,7 @@ const updateCharacter = async (req, res) => {
 };
 
 const deleteCharacter = async (req, res) => {
+    // #swagger.tags = ['Characters']
     try {
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarCharacters');

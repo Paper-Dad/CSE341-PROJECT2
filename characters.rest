@@ -1,11 +1,11 @@
 ### Get all userscharacters
-GET http://localhost:3000/characters
+GET https://cse341-project2-5y6c.onrender.com/characters
 
 ### Get a single character
-GET http://localhost:3000/characters/6a0fafafcdf6808ce1648b41
+GET https://cse341-project2-5y6c.onrender.com/characters/6a0fafafcdf6808ce1648b41
 
 ### Create a new character
-POST http://localhost:3000/characters
+POST https://cse341-project2-5y6c.onrender.com/characters
 Content-Type: application/json
 
 {
@@ -19,7 +19,7 @@ Content-Type: application/json
 }
 
 ### Update an existing character
-PUT http://localhost:3000/characters/6a0fafafcdf6808ce1648b41
+PUT https://cse341-project2-5y6c.onrender.com/characters/6a0fafafcdf6808ce1648b41
 Content-Type: application/json
 
 {
@@ -33,5 +33,5 @@ Content-Type: application/json
 }
 
 ### Delete a character
-DELETE http://localhost:3000/characters/6a0fc1b1cc776b669c4212f7
+DELETE https://cse341-project2-5y6c.onrender.com/characters/6a0fc1b1cc776b669c4212f7
 
