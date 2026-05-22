@@ -14,6 +14,10 @@ app.use((req, res, next) => {
 
 app.use('/', require('./routes'));
 
+process.on('uncaughtException', (err, origin) => {
+    console.log(process.stderr.fd, 'caught exception: ${err}\n' + 'exception origin: ${origin}');
+});
+
 mongodb.initDb((err) => {
     if (err) {
         console.error('Failed to connect to the database. Exiting...');

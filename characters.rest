@@ -19,17 +19,17 @@ Content-Type: application/json
 }
 
 ### Update an existing character
-PUT https://cse341-project2-5y6c.onrender.com/characters/6a0fafafcdf6808ce1648b41
+PUT https://cse341-project2-5y6c.onrender.com/characters/6a10d01c9d14328aefc1c96c
 Content-Type: application/json
 
 {
-    "name": "Zuko",
+    "name": "",
     "nation": "Fire Nation",
     "bendingType": "Firebending",
     "role": "Protagonist",
-    "age": 16,
+    "age": "Twelve",
     "firstAppearance": "The Boy in the Iceberg",
-    "description": "Zuko is a skilled Firebender from the Fire Nation. He is the crown prince of the Fire Nation."
+    "description": "Zuk"
 }
 
 ### Delete a character
@@ -49,11 +49,11 @@ Content-Type: application/json
     "title": "The Desert",
     "book": "Earth",
     "episode": 11,
-    "description": "Aang and his friends get stranded in the desert and must find a way to survive."
+    "description": "Aang and his friends get stranded in the desert and must find a way to survive. They encounter new challenges and make new allies along the way."
 }
 
 ### Update an existing episode
-PUT https://cse341-project2-5y6c.onrender.com/episodes/6a0fd7d31fbc7b987c2d0acc
+PUT https://cse341-project2-5y6c.onrender.com/episodes/6a10d30f968f560b7d6128a8
 Content-Type: application/json
 
 {
