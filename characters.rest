@@ -1,0 +1,37 @@
+### Get all userscharacters
+GET http://localhost:3000/characters
+
+### Get a single character
+GET http://localhost:3000/characters/6a0fafafcdf6808ce1648b41
+
+### Create a new character
+POST http://localhost:3000/characters
+Content-Type: application/json
+
+{
+    "name": "Toph",
+    "nation": "Earth Kingdom",
+    "bendingType": "Earthbending",
+    "role": "Supporting character",
+    "age": 12,
+    "firstAppearance": "The Blind Bandit",
+    "description": "Toph is a skilled Earthbender from the Earth Kingdom."
+}
+
+### Update an existing character
+PUT http://localhost:3000/characters/6a0fafafcdf6808ce1648b41
+Content-Type: application/json
+
+{
+    "name": "Zuko",
+    "nation": "Fire Nation",
+    "bendingType": "Firebending",
+    "role": "Protagonist",
+    "age": 16,
+    "firstAppearance": "The Boy in the Iceberg",
+    "description": "Zuko is a skilled Firebender from the Fire Nation. He is the crown prince of the Fire Nation."
+}
+
+### Delete a character
+DELETE http://localhost:3000/characters/6a0fc1b1cc776b669c4212f7
+
