@@ -210,6 +210,43 @@
             "description": "Internal Server Error"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Episodes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "example": "any"
+                },
+                "book": {
+                  "example": "any"
+                },
+                "episode": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
     "/episodes/{id}": {
