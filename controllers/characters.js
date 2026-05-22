@@ -15,6 +15,9 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
     // #swagger.tags = ['Characters']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid character ID' });
+        }
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarCharacters');
         const character = await db.findOne({ _id: id });
@@ -55,6 +58,9 @@ const createCharacter = async (req, res) => {
 const updateCharacter = async (req, res) => {
     // #swagger.tags = ['Characters']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid character ID' });
+        }
         const id = new ObjectId(req.params.id);
         const updatedCharacter = {
             name: req.body.name,
@@ -85,6 +91,9 @@ const updateCharacter = async (req, res) => {
 const deleteCharacter = async (req, res) => {
     // #swagger.tags = ['Characters']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid character ID' });
+        }
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarCharacters');
         const result = await db.deleteOne({ _id: id });

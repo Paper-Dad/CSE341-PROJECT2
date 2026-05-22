@@ -15,6 +15,9 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
     // #swagger.tags = ['Episodes']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid episode ID' });
+        }
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarEpisodes');
         const episode = await db.findOne({ _id: id });
@@ -52,6 +55,9 @@ const createEpisode = async (req, res) => {
 const updateEpisode = async (req, res) => {
     // #swagger.tags = ['Episodes']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid episode ID' });
+        }
         const id = new ObjectId(req.params.id);
         const updatedEpisode = {
             title: req.body.title,
@@ -79,6 +85,9 @@ const updateEpisode = async (req, res) => {
 const deleteEpisode = async (req, res) => {
     // #swagger.tags = ['Episodes']
     try {
+        if (!ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'Invalid episode ID' });
+        }
         const id = new ObjectId(req.params.id);
         const db = mongodb.getDb().db('project2').collection('avatarEpisodes');
         const result = await db.deleteOne({ _id: id });
