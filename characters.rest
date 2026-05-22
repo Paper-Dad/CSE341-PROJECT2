@@ -1,4 +1,4 @@
-### Get all userscharacters
+### Get all characters
 GET https://cse341-project2-5y6c.onrender.com/characters
 
 ### Get a single character
@@ -35,3 +35,33 @@ Content-Type: application/json
 ### Delete a character
 DELETE https://cse341-project2-5y6c.onrender.com/characters/6a0fc1b1cc776b669c4212f7
 
+### Get all episodes
+GET https://cse341-project2-5y6c.onrender.com/episodes
+
+### Get a single episode
+GET https://cse341-project2-5y6c.onrender.com/episodes/6a0fd4493ebf2e2890f6bcef
+
+### Create a new episode
+POST https://cse341-project2-5y6c.onrender.com/episodes
+Content-Type: application/json
+
+{
+    "title": "The Desert",
+    "book": "Earth",
+    "episode": 11,
+    "description": "Aang and his friends get stranded in the desert and must find a way to survive."
+}
+
+### Update an existing episode
+PUT https://cse341-project2-5y6c.onrender.com/episodes/6a0fd7d31fbc7b987c2d0acc
+Content-Type: application/json
+
+{
+    "title": "The Desert",
+    "book": "Earth",
+    "episode": 11,
+    "description": "Aang and his friends get stranded in the desert and must find a way to survive. They encounter new challenges and make new allies along the way."
+}
+
+### Delete an episode
+DELETE https://cse341-project2-5y6c.onrender.com/episodes/6a0fd7d31fbc7b987c2d0acc

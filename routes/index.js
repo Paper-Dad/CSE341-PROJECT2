@@ -8,5 +8,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/characters', require('./characters'));
+router.use('/episodes', require('./episodes'));
 
 module.exports = router;

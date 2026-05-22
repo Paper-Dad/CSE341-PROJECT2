@@ -1,29 +1,20 @@
 [
     {
-        "name": "Aang",
-        "nation": "Air Nomads",
-        "bendingType": "Airbending",
-        "role": "Avatar",
-        "age": 12,
-        "firstAppearance": "The Boy in the Iceberg",
-        "description": "Aang is the last Airbender and the current Avatar. He must master all four elements to bring balance to the world."
+        "title": "The Boy in the Iceberg",
+        "book": "Water",
+        "episode": 1,
+        "description": "Katara and Sokka discover Aang frozen in an iceberg."
     },
     {
-        "name": "Katara",
-        "nation": "Water Tribe",
-        "bendingType": "Waterbending",
-        "role": "Main character",
-        "age": 14,
-        "firstAppearance": "The Boy in the Iceberg",
-        "description": "Katara is a skilled Waterbender from the Southern Water Tribe who helps Aang on his journey."
+        "title": "The Avatar Returns",
+        "book": "Water",
+        "episode": 2,
+        "description": "Aang reveals that he is the Avatar while Zuko begins pursuing him."
     },
     {
-        "name": "Zuko",
-        "nation": "Fire Nation",
-        "bendingType": "Firebending",
-        "role": "Prince",
-        "age": 16,
-        "firstAppearance": "The Boy in the Iceberg",
-        "description": "Zuko is the banished prince of the Fire Nation who begins by hunting the Avatar but later seeks redemption."
+        "title": "The Southern Air Temple",
+        "book": "Water",
+        "episode": 3,
+        "description": "Aang visits his old home and learns what happened to the Air Nomads."
     }
 ]
