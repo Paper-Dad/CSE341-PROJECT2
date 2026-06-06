@@ -1,20 +1,16 @@
 [
     {
-        "title": "The Boy in the Iceberg",
-        "book": "Water",
-        "episode": 1,
-        "description": "Katara and Sokka discover Aang frozen in an iceberg."
+        "username": "avatarfan01",
+        "firstName": "Benjamin",
+        "lastName": "Roberts",
+        "role": "admin",
+        "favoriteCharacter": "Toph"
     },
     {
-        "title": "The Avatar Returns",
-        "book": "Water",
-        "episode": 2,
-        "description": "Aang reveals that he is the Avatar while Zuko begins pursuing him."
-    },
-    {
-        "title": "The Southern Air Temple",
-        "book": "Water",
-        "episode": 3,
-        "description": "Aang visits his old home and learns what happened to the Air Nomads."
+        "username": "watertribe87",
+        "firstName": "Owen",
+        "lastName": "Roberts",
+        "role": "user",
+        "favoriteCharacter": "Appa"
     }
 ]

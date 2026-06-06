@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
 
 router.use('/characters', require('./characters'));
 router.use('/episodes', require('./episodes'));
+router.use('/nations', require('./nations'));
 
 router.get('/login', passport.authenticate('github'), (req, res) => {
     // This function will not be called as the request will be redirected to GitHub for authentication

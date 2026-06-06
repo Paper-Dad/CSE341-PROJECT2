@@ -346,6 +346,183 @@
           }
         }
       }
+    },
+    "/nations/": {
+      "get": {
+        "tags": [
+          "Nations"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Nations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "Air Nomads"
+                },
+                "capital": {
+                  "example": "Southern Air Temple"
+                },
+                "government": {
+                  "example": "Spiritual Monastic Society"
+                },
+                "culture": {
+                  "example": "The Air Nomads were a peaceful and spiritual people who valued freedom, meditation, and harmony with nature."
+                },
+                "notableCharacters": {
+                  "example": [
+                    "Aang",
+                    "Gyatso",
+                    "Tenzin"
+                  ]
+                },
+                "description": {
+                  "example": "The Air Nomads lived in temples located around the world and were known for their deep spirituality and airbending abilities."
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/nations/{id}": {
+      "get": {
+        "tags": [
+          "Nations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Nations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "Air Nomads"
+                },
+                "capital": {
+                  "example": "Southern Air Temple"
+                },
+                "government": {
+                  "example": "Spiritual Monastic Society"
+                },
+                "culture": {
+                  "example": "The Air Nomads were a peaceful and spiritual people who valued freedom, meditation, and harmony with nature."
+                },
+                "notableCharacters": {
+                  "example": [
+                    "Aang",
+                    "Gyatso",
+                    "Tenzin"
+                  ]
+                },
+                "description": {
+                  "example": "The Air Nomads lived in temples located around the world and were known for their deep spirituality and airbending abilities."
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Nations"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
     }
   }
 }
