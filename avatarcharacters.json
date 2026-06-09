@@ -1,16 +1,16 @@
 [
-    {
-        "username": "avatarfan01",
-        "firstName": "Benjamin",
-        "lastName": "Roberts",
-        "role": "admin",
-        "favoriteCharacter": "Toph"
-    },
-    {
-        "username": "watertribe87",
-        "firstName": "Owen",
-        "lastName": "Roberts",
-        "role": "user",
-        "favoriteCharacter": "Appa"
-    }
+{
+    "_id": "6a24898d1c59eafb333cea3a",
+    "name": "Fire Nation",
+    "capital": "Fire Nation Capital",
+    "government": "Monarchy",
+    "culture": "The Fire Nation is known for ambition, discipline, innovation, and military strength.",
+    "notableCharacters": [
+        "Zuko",
+        "Azula",
+        "Iroh",
+        "Ozai"
+    ],
+    "description": "The Fire Nation is a powerful island nation known for firebending, advanced technology, and a strong royal family."
+}
 ]
