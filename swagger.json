@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Characters API",
-    "description": "API characters project",
+    "title": "Avatar API",
+    "description": "API Avatar project",
     "version": "1.0.0"
   },
   "host": "cse341-project2-5y6c.onrender.com",
