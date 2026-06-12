@@ -59,13 +59,17 @@ process.on('uncaughtException', (err, origin) => {
     console.log(process.stderr.fd, `caught exception: ${err}\n` + `exception origin: ${origin}`);
 });
 
-mongodb.initDb((err) => {
-    if (err) {
-        console.error('Failed to connect to the database. Exiting...');
-        process.exit(1);
-    } else {
-        app.listen(port, () => {
-            console.log(`Database is listening and node is running on http://localhost:${port}`);
-        });
-    }
-});
+if (process.env.NODE_ENV !== 'test') {
+    mongodb.initDb((err) => {
+        if (err) {
+            console.error('Failed to connect to the database. Exiting...');
+            process.exit(1);
+        } else {
+            app.listen(port, () => {
+                console.log(`Database is listening and node is running on http://localhost:${port}`);
+            });
+        }
+    });
+}
+
+module.exports = app;
